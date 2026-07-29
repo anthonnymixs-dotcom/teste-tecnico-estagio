@@ -1,7 +1,7 @@
-# Teste Técnico — Estagiário de Operações | GCB Investimentos
+# Teste Técnico — Estagiário de Operações
 
-Candidata: [Seu Nome Completo]
-Data de entrega: [DD/MM/AAAA]
+Anthonny Alexandre
+Data de entrega: 29/07/2026
 
 ## Como navegar este repositório
 
@@ -21,15 +21,3 @@ Cada seção do teste está em um arquivo ou pasta próprios, na ordem do docume
 | 10 | [secao_10_comunicacao.md](secao_10_comunicacao.md) | Comunicação executiva e mentoria |
 | Final | [secao_final_declaracoes.md](secao_final_declaracoes.md) | Tempo gasto, IA utilizada, premissas, dúvidas em aberto |
 
-## Como rodar os scripts Python (se aplicável)
-
-```bash
-cd secao_3_python
-pip install -r requirements.txt  # se houver dependências
-python secao_3_2_consumo_api.py
-```
-
-## Observações
-
-- Diagramas de n8n e BPM estão em PNG (visual) e, quando aplicável, em JSON exportado (n8n) na pasta correspondente.
-- Premissas assumidas em questões com margem de interpretação estão comentadas no próprio arquivo da seção, além de resumidas na seção final.
