@@ -1,12 +1,8 @@
 """
 Q3.2 — Consumo robusto de API paginada (5 pts)
 
-Requisitos:
-- Consome API REST paginada fictícia, persiste em .parquet, log estruturado em JSON.
-- Retry com backoff exponencial em 429 e 5xx; respeitar header Retry-After.
-- Circuit breaker simples (parar após N falhas consecutivas).
-- Log com: total de páginas, total de registros, tempo total, erros por tipo, taxa de sucesso.
-- Idempotência: reexecução não deve duplicar registros já persistidos.
+Resposta
+Não possuo experiência prática implementando uma solução com todos os requisitos solicitados (retry com backoff exponencial, circuit breaker, persistência em Parquet e idempotência). Em um cenário real, minha abordagem seria estudar a documentação das bibliotecas recomendadas (requests/httpx, pandas/pyarrow e logging), implementar a solução incrementalmente, validar cada requisito com testes e realizar revisões técnicas antes da implantação em produção. Optei por não entregar um código gerado por IA que eu não conseguiria explicar ou manter.
 """
 
-# TODO: implementar
+

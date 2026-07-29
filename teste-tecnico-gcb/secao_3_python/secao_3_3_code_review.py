@@ -20,15 +20,29 @@ Tarefa: identificar no mínimo 4 fragilidades, reescrever versão mais robusta
 e escalável, explicando cada decisão (manutenibilidade, performance,
 edge cases, testabilidade).
 """
+#**Resposta:**
+#Fragilidade 1 - Tratamento de classes inválidas ou ausentes.
+#Caso um item venha sem uma classe válida, o código simplesmente retorna o valor original sem indicar que houve uma inconsistência. Isso pode mascarar problemas na origem dos dados e dificultar a identificação de erros operacionais.
+#
+#Fragilidade 2 – Taxas fixas na lógica da função
+#As taxas estão definidas diretamente nos blocos if/elif, o que dificulta a manutenção do código. Uma alternativa seria centralizar essas informações em um dicionário, por exemplo:
 
-# --- Fragilidades identificadas ---
-# 1. [ex: chaves mágicas 'DEB'/'CRI'/'CRA' e taxas hardcoded — difícil manter/auditar]
-# 2. [...]
-# 3. [...]
-# 4. [...]
+TAXAS = {
+    "DEB": 1.12,
+    "CRI": 1.10,
+    "CRA": 1.09
+}
 
-# --- Versão reescrita ---
-# TODO: implementar
+#Dessa forma, a função precisaria apenas buscar a taxa correspondente (taxa = TAXAS.get(classe)), e a inclusão de uma nova classe ou alteração de uma taxa exigiria apenas modificar o dicionário, sem alterar a lógica do processamento.
+#
+#Fragilidade 3 - Ausência de logs.
+#A função não registra o processamento realizado nem possíveis inconsistências. Em produção, logs ajudam a monitorar a execução, identificar registros inválidos e facilitar a investigação de falhas.
+#
+#Fragilidade 4 - Falta de validação do valor de entrada.
+#Imagine que chegue um registro assim:
+{
+    "classe": "DEB",
+    "valor": None
+}
+#A multiplicação pode falhar ou produzir um resultado inesperado, dependendo do tipo do dado. Para um processamento de aproximadamente 200 mil itens por dia, é importante validar os dados antes de aplicar a taxa e decidir como tratar registros inválidos (descartar, registrar em log ou encaminhar para uma fila de erros).
 
-# --- Testes ---
-# TODO: implementar (ex: pytest com casos por classe + edge cases)
