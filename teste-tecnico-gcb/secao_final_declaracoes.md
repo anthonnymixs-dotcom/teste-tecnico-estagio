@@ -1,18 +1,8 @@
 # Seção Final · Declarações
 
 ## Tempo total efetivo gasto
-[ex: X horas, distribuídas em Y dias]
+6 horas, ao longo de 3 dias
 
 ## Ferramentas de IA utilizadas
-| Seção | Ferramenta | Justificativa de uso |
-|---|---|---|
-| | | |
+ChatGPT e Claude AI. As respostas foram revisadas e adaptadas antes da entrega.
 
-## Premissas assumidas
-- [Seção X, QX.X]: [premissa e motivo]
-
-## Dúvidas em aberto
-- [Seção X, QX.X]: [dúvida — a explorar na entrevista oral]
-
-## Questões não respondidas (se houver)
-- [Seção X, QX.X]: [motivo]
