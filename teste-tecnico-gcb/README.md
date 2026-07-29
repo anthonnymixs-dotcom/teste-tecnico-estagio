@@ -1,6 +1,7 @@
 # Teste Técnico — Estagiário de Operações
 
 Anthonny Alexandre
+
 Data de entrega: 29/07/2026
 
 ## Como navegar este repositório
